@@ -1,7 +1,9 @@
-const amIFat = true;
-const amIThin = null;
-let something;
+const daysOfWeek = ["mon", "tue", "wed", "thu", "fri", "sat"];
 
-console.log(amIFat);
-console.log(amIThin);
-console.log(something);
+// Get Item from Array
+console.log(daysOfWeek);
+
+// Add one more day to the array
+daysOfWeek.push("sun");
+
+console.log(daysOfWeek);
