@@ -1,9 +1,17 @@
-const daysOfWeek = ["mon", "tue", "wed", "thu", "fri", "sat"];
+const player = {
+  name: "monica",
+  age: 25,
+  fat: true,
+};
+console.log(player);
+console.log(player.name);
+console.log(player["name"]);
 
-// Get Item from Array
-console.log(daysOfWeek);
+player.fat = false;
+console.log(player);
 
-// Add one more day to the array
-daysOfWeek.push("sun");
+player.lastName = "geller";
+console.log(player);
 
-console.log(daysOfWeek);
+player.age = player.age + 10;
+console.log(player.age);
