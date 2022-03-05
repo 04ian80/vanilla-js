@@ -39,3 +39,36 @@ player.sayHello("rachel");
 player.sayHello("ross");
 player.sayHello("pheobe");
 player.sayHello("chandler");
+
+//연습
+const friends = {
+  name: "monica",
+  age: 25,
+  job: "head chef",
+};
+
+console.log(friends.name);
+console.log(friends);
+
+function describe(fruits, color) {
+  console.log(fruits + "'s color is " + color);
+}
+
+describe("apple", "red");
+describe("grape", "purple");
+describe("banana", "yellow");
+describe("watermelon", "green and black");
+
+const object = {
+  name: "monica",
+  intro: function (fruits, color) {
+    console.log(fruits + "'s color is " + color);
+  },
+};
+console.log(object.name);
+object.intro("banana", "yellow");
+
+const toDo = ["walk the dog", "make lunch", "do the homework"];
+console.log(toDo[1]);
+toDo[1] = "watering the plant";
+console.log(toDo[1]);
