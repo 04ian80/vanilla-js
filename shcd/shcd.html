@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>shcd</title>
+    <link rel="stylesheet" href="shcd.css" />
+  </head>
+  <body>
+    <h1>PUSH THE BUTTON</h1>
+    <input
+      class="day_night"
+      type="button"
+      value="night"
+      onclick="
+      if(document.querySelector('.day_night').value === 'night'){
+    document.querySelector('body').style.backgroundColor = 'rgb(55,55,55)';
+    document.querySelector('body').style.color = 'snow';
+    document.querySelector('input').style.backgroundColor = 'snow';
+    document.querySelector('input').style.color = 'rgb(55,55,55)';
+    document.querySelector('.day_night').value = 'day';
+  } else{
+    document.querySelector('body').style.backgroundColor = 'snow';
+    document.querySelector('body').style.color = 'rgb(55,55,55)';
+    document.querySelector('input').style.backgroundColor = 'rgb(55,55,55)';
+    document.querySelector('input').style.color = 'snow';
+    document.querySelector('.day_night').value = 'night';
+  }
+    "
+    />
+    <script src="shcd.js"></script>
+  </body>
+</html>
