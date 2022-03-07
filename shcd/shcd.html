@@ -14,18 +14,49 @@
       type="button"
       value="night"
       onclick="
-      if(document.querySelector('.day_night').value === 'night'){
+      if(this.value === 'night'){
     document.querySelector('body').style.backgroundColor = 'rgb(55,55,55)';
     document.querySelector('body').style.color = 'snow';
     document.querySelector('input').style.backgroundColor = 'snow';
     document.querySelector('input').style.color = 'rgb(55,55,55)';
-    document.querySelector('.day_night').value = 'day';
+    this.value = 'day';
   } else{
     document.querySelector('body').style.backgroundColor = 'snow';
     document.querySelector('body').style.color = 'rgb(55,55,55)';
     document.querySelector('input').style.backgroundColor = 'rgb(55,55,55)';
     document.querySelector('input').style.color = 'snow';
-    document.querySelector('.day_night').value = 'night';
+    this.value = 'night';
+  }
+    "
+    />
+
+    <div>
+      JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled
+      programming language with first-class functions. While it is most
+      well-known as the scripting language for Web pages, many non-browser
+      environments also use it, such as Node.js, Apache CouchDB and Adobe
+      Acrobat. JavaScript is a prototype-based, multi-paradigm, single-threaded,
+      dynamic language, supporting object-oriented, imperative, and declarative
+      (e.g. functional programming) styles. Read more about JavaScript.
+    </div>
+
+    <input
+      class="day_night"
+      type="button"
+      value="night"
+      onclick="
+      if(this.value === 'night'){
+    document.querySelector('body').style.backgroundColor = 'rgb(55,55,55)';
+    document.querySelector('body').style.color = 'snow';
+    document.querySelector('input').style.backgroundColor = 'snow';
+    document.querySelector('input').style.color = 'rgb(55,55,55)';
+    this.value = 'day';
+  } else{
+    document.querySelector('body').style.backgroundColor = 'snow';
+    document.querySelector('body').style.color = 'rgb(55,55,55)';
+    document.querySelector('input').style.backgroundColor = 'rgb(55,55,55)';
+    document.querySelector('input').style.color = 'snow';
+    this.value = 'night';
   }
     "
     />
