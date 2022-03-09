@@ -1,12 +1,21 @@
 body {
-  background-color: slategrey;
-}
-
-a {
-  text-decoration: none;
-  color: seashell;
+  background-color: snow;
 }
 
 li {
   color: lightcoral;
+}
+
+input {
+  border: none;
+  border-radius: 20px;
+  width: 80px;
+  height: 30px;
+  background-color: rgb(55, 55, 55);
+  opacity: 0.8;
+  color: snow;
+}
+
+input:hover {
+  opacity: 1;
 }
