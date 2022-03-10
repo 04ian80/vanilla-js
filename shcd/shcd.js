@@ -7,3 +7,20 @@ while (i < snacks.length) {
   );
   i = i + 1;
 }
+
+function two() {
+  document.write("<li>2-1</li>");
+  document.write("<li>2-2</li>");
+}
+
+document.write("<li>1</li>");
+document.write("<li>2-1</li>");
+document.write("<li>2-2</li>");
+document.write("<li>3</li>");
+document.write("<li>2-1</li>");
+document.write("<li>2-2</li>");
+
+document.write("<li>1</li>");
+two();
+document.write("<li>3</li>");
+two();
