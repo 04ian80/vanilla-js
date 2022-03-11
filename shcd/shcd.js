@@ -64,7 +64,10 @@ for (const key in char) {
   document.write(key + ": " + char[key] + "<br>");
 }
 
-for (const key in char) {
-  document.write(key + "<br>");
-  document.write(char[key] + "<br>");
-}
+char.showAll = function () {
+  for (const key in this) {
+    document.write(key + ": " + this[key] + "<br>");
+  }
+};
+
+char.showAll();
