@@ -49,3 +49,13 @@ function nightDayHandler(self) {
     linkSetColor("blue");
   }
 }
+
+const char = {
+  name: "monica",
+  age: 25,
+  job: "chef",
+};
+char.silblings = "ross";
+console.log(char.name);
+char["family name"] = "geller";
+console.log(char);
