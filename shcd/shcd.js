@@ -1,5 +1,4 @@
-// loop & array
-let snacks = ["choco-chip", "vanilla", "cookie-dough", "green-tea"];
+const snacks = ["choco-chip", "vanilla", "cookie-dough", "green-tea"];
 let i = 0;
 while (i < snacks.length) {
   document.write(
@@ -8,32 +7,45 @@ while (i < snacks.length) {
   i = i + 1;
 }
 
-// 함수function
-function two() {
-  document.write("<li>2-1</li>");
-  document.write("<li>2-2</li>");
+function linkSetColor(color) {
+  const aList = document.querySelectorAll("a");
+  let l = 0;
+  while (l < aList.length) {
+    aList[l].style.color = color;
+    l = l + 1;
+  }
+}
+function bodySetColor(color) {
+  document.querySelector("body").style.color = color;
+}
+function bodySetBackgroundColor(color) {
+  document.querySelector("body").style.backgroundColor = color;
+}
+function inputSetColor(color) {
+  document.querySelector("input").style.color = color;
+}
+function inputSetBackgroundColor(color) {
+  document.querySelector("input").style.backgroundColor = color;
 }
 
-document.write("<li>1</li>");
-document.write("<li>2-1</li>");
-document.write("<li>2-2</li>");
-document.write("<li>3</li>");
-document.write("<li>2-1</li>");
-document.write("<li>2-2</li>");
-//위와 같은 결과가 출력 되지만 훨씬 효율적인 코드
-document.write("<li>1</li>");
-two();
-document.write("<li>3</li>");
-two();
-//매개변수와 인자(parameter & argument)
-function sum(a, b) {
-  document.write(a + b);
-}
-sum(5, 6);
+function nightDayHandler(self) {
+  const bodyColor = document.querySelector("body");
+  const inputColor = document.querySelector("input");
+  if (self.value === "night") {
+    bodySetBackgroundColor("rgb(55,55,55)");
+    bodySetColor("snow");
+    inputSetBackgroundColor("snow");
+    inputSetColor("rgb(55,55,55)");
+    self.value = "day";
 
-function sum2(a, b) {
-  return a + b;
+    linkSetColor("powderblue");
+  } else {
+    bodySetBackgroundColor("snow");
+    bodySetColor("rgb(55, 55, 55)");
+    inputSetBackgroundColor("rgb(55,55,55)");
+    inputSetColor("snow");
+    self.value = "night";
+
+    linkSetColor("blue");
+  }
 }
-document.write("<br>" + sum2(1, 2));
-document.write("<div style='color: red'>" + sum2(1, 2) + "</div>");
-console.log(sum2(1, 2));

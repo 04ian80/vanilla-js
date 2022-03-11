@@ -13,37 +13,15 @@
       class="day_night"
       type="button"
       value="night"
-      onclick="
-      if(this.value === 'night'){
-    document.querySelector('body').style.backgroundColor = 'rgb(55,55,55)';
-    document.querySelector('body').style.color = 'snow';
-    document.querySelector('input').style.backgroundColor = 'snow';
-    document.querySelector('input').style.color = 'rgb(55,55,55)';
-    this.value = 'day';
-
-    let aList = document.querySelectorAll('a');
-    let l = 0;
-    while (l < aList.length) {
-      aList[l].style.color = 'powderblue';
-      l = l + 1;
-    }
-  } else{
-    document.querySelector('body').style.backgroundColor = 'snow';
-    document.querySelector('body').style.color = 'rgb(55,55,55)';
-    document.querySelector('input').style.backgroundColor = 'rgb(55,55,55)';
-    document.querySelector('input').style.color = 'snow';
-    this.value = 'night';
-
-    let aList = document.querySelectorAll('a');
-    let l = 0;
-    while (l < aList.length) {
-      aList[l].style.color = 'blue';
-      l = l + 1;
-    }
-  }
-    "
+      onclick="nightDayHandler(this)"
     />
 
+    <input
+      class="day_night"
+      type="button"
+      value="night"
+      onclick="nightDayHandler(this)"
+    />
     <script src="shcd.js"></script>
   </body>
 </html>
