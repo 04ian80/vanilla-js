@@ -59,3 +59,12 @@ char.silblings = "ross";
 console.log(char.name);
 char["family name"] = "geller";
 console.log(char);
+
+for (const key in char) {
+  document.write(key + ": " + char[key] + "<br>");
+}
+
+for (const key in char) {
+  document.write(key + "<br>");
+  document.write(char[key] + "<br>");
+}
