@@ -8,7 +8,9 @@ console.log(frAge);
 
 const calculator = {
   add: function (a, b) {
+    console.log("hello");
     return a + b;
+    console.log("bye");
   },
   minus: function (a, b) {
     return a - b;
