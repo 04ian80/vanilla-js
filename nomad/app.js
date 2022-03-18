@@ -1,15 +1,13 @@
 const h1 = document.querySelector(".hello h1");
 
 function handleTitleClick() {
-  const clickedClass = "clicked sexy-font";
-  const h1Class = h1.className;
-  let newClass;
-  if (h1Class === clickedClass) {
-    newClass = "";
-  } else {
-    newClass = clickedClass;
-  }
-  h1.className = newClass;
+  const clickedClass = "clicked";
+  // if (h1.classList.contains(clickedClass)) {
+  //  h1.classList.remove(clickedClass);
+  //} else {
+  //  h1.classList.add(clickedClass);
+  // }
+  h1.classList.toggle("clicked");
 }
 
 h1.addEventListener("click", handleTitleClick);
