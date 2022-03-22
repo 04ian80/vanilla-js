@@ -51,3 +51,11 @@ if (savedToDos !== null) {
   toDos = parsedToDos;
   parsedToDos.forEach(paintToDo);
 }
+
+const arr = [1, 2, 3, 4];
+
+function sexyFilter(item) {
+  return item !== 3;
+}
+
+console.log(arr.filter(sexyFilter));
