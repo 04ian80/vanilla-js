@@ -1,16 +1,12 @@
+@import "input.css";
+@import "div.css";
+@import "widget.css";
+@import "img.css";
+
 .hidden {
   display: none;
 }
 
-img {
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  z-index: -1;
-}
-
-#clock {
-  font-size: 50px;
+body {
+  color: snow;
 }

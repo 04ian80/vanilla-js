@@ -1,0 +1,28 @@
+input {
+  color: snow;
+  border: none;
+  border-bottom: 2px solid rgba(235, 226, 226, 0.6);
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#name-input {
+  width: 180px;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+#todo-input {
+  width: 150px;
+  font-size: 15px;
+}
+
+input::placeholder {
+  color: snow;
+}
+
+#login-form input:focus,
+#todo-form input:focus {
+  outline: none;
+  border-color: white;
+  transition: border-color 0.3s ease-in-out;
+}
