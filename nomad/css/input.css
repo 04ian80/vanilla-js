@@ -18,6 +18,7 @@ input {
 
 input::placeholder {
   color: snow;
+  opacity: 0.7;
 }
 
 #login-form input:focus,

@@ -1,12 +1,22 @@
-@import "input.css";
-@import "div.css";
-@import "widget.css";
-@import "img.css";
+@import 'input.css';
+@import 'div.css';
+@import 'widget.css';
+@import 'img.css';
+@import 'todo.css';
 
 .hidden {
   display: none;
 }
 
 body {
-  color: snow;
+  color: rgba(36, 30, 30, 0.973);
+}
+
+.scroll-x {
+  overflow-x: hidden;
+  overflow-y: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
