@@ -12,6 +12,7 @@
 
 #quote {
   position: fixed;
+  color: #fff;
   background-color: rgba(0, 0, 0, 0.3);
   bottom: 10px;
   font-style: italic;
